@@ -81,6 +81,6 @@ This activity guides you through building a simple CRUD API using Prisma and Exp
 1. Create the following routes. These routes should use the [Prisma Client CRUD operations](https://www.prisma.io/docs/concepts/components/prisma-client/crud) to read and write from the database.
    - `GET /api/customers` - returns an array of customers
    - `GET /api/restaurants` - returns an array of restaurants
-   - `GET /api/reservations` - Returns an array of reservations
-   - `POST /api/customers/:id/reservations` Has an object containing a valid restaurant_id, date, and party_count as the payload, and returns the created reservation with a status code of 201.
-   - `DELETE /api/customers/:customer_id/reservations/:id` - In the URL, gets passed the id of the reservation to delete and the customer_id, and returns nothing with a status code of 204.
+   - `GET /api/reservations` - returns an array of reservations
+   - `POST /api/customers/:customerId/reservations` has an object containing a valid restaurant_id, date, and party_count as the payload, and returns the created reservation with a status code of 201.
+   - `DELETE /api/customers/:customerId/reservations/:id` - in the URL, gets passed the id of the reservation to delete and the customer_id, and returns nothing with a status code of 204.
