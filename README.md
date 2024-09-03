@@ -78,6 +78,14 @@ This activity guides you through building a simple CRUD API using Prisma and Exp
 ### Serve the Data with Express
 
 1. Install Express and create a server.
+   - `npm install express morgan`
+   - `npm install -D nodemon`
+   - Add a script to your `package.json` file that starts your application:
+   ```json
+   "scripts": {
+      "start:dev": "nodemon server.js"
+   }
+   ```
 1. Create the following routes. These routes should use the [Prisma Client CRUD operations](https://www.prisma.io/docs/concepts/components/prisma-client/crud) to read and write from the database.
    - `GET /api/customers` - returns an array of customers
    - `GET /api/restaurants` - returns an array of restaurants
