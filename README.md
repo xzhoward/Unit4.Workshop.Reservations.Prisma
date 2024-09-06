@@ -94,5 +94,5 @@ This activity guides you through building a simple CRUD API using Prisma and Exp
    - `GET /api/restaurants` - returns an array of restaurants
    - `GET /api/reservations` - returns an array of reservations
    - `POST /api/customers/:customerId/reservations` - has an object containing a valid restaurantId, date, and partyCount as the payload, and returns the created reservation with a status code of 201
-      - use "date": "{{$isoTimestamp}}" to test in Postman
+      - use `"date": "{{$isoTimestamp}}"` to test in Postman
    - `DELETE /api/customers/:customerId/reservations/:id` - in the URL, gets passed the id of the reservation to delete and the customerId, and returns nothing with a status code of 204
