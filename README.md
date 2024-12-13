@@ -22,10 +22,7 @@ This activity guides you through building a simple CRUD API using Prisma and Exp
    `npm install prisma --save-dev`
 1. Initialize Prisma to use postgresql.\
    `npx prisma init --datasource-provider postgresql`
-1. In the generated `.env` file, set `DATABASE_URL` to `"postgresql://USER:@localhost:5432/reservations_db"`\
-   For Windows, use this connection:
-   `"postgresql://USER:PASSWORD@localhost:5432/reservations_db"`
-
+1. In the generated `.env` file, set `DATABASE_URL` to `"postgresql://USER:PASSWORD@localhost:5432/reservations_db"`
    - USER is the name of your database user, e.g. janedoe
    - PASSWORD is the password for your database user
 
