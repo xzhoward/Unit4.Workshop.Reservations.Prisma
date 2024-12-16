@@ -80,6 +80,7 @@ This activity guides you through building a simple CRUD API using Prisma and Exp
 1. Install Express and create a server.
    - `npm install express morgan`
    - `npm install -D nodemon`
+   - Create a `server.js` file for the express server and add middleware
    - Add a script to your `package.json` file that starts your application:
    ```json
    "scripts": {
